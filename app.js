@@ -1,5 +1,5 @@
 // --- Configuration (UPDATE THESE!) ---
-const ZART_TOKEN_CONTRACT_ADDRESS = "YOUR_SEPOLIA_CONTRACT_ADDRESS_HERE"; // Replace with your deployed ZARToken address on Sepolia
+const ZART_TOKEN_CONTRACT_ADDRESS = "0x7F0c6e462e391E08625DAa30a83F40607867c706"; // Replace with your deployed ZARToken address on Sepolia
 const ZART_TOKEN_ABI = [ // Replace with your ZARToken's ABI
     // --- Key ABI elements needed ---
     // Event for Transfer (standard ERC20)
@@ -13,7 +13,7 @@ const ZART_TOKEN_ABI = [ // Replace with your ZARToken's ABI
     // e.g., "function mintCooldown() view returns (uint256)"
 ];
 const SEPOLIA_CHAIN_ID = "0xaa36a7"; // Chain ID for Sepolia (11155111 in hex)
-const SEPOLIA_RPC_URL = "YOUR_SEPOLIA_RPC_URL"; // e.g., from Alchemy or Infura
+const SEPOLIA_RPC_URL = "https://eth-sepolia.g.alchemy.com/v2/wB7IOt6oAEAlkNMMXCaWtuSTOKbWQ2CB"; // e.g., from Alchemy or Infura
 
 // --- DOM Elements ---
 const connectWalletBtn = document.getElementById('connectWalletBtn');
