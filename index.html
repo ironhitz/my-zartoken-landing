@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZARToken - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Ethers.js from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.1/ethers.umd.min.js"
+            integrity="sha512-P6hTcsGjR2J8+1gVjMZ29PSi4UAK4LlgBHC2zsHxY/ZXLfOqHMNk2JvYLXfXqRzomgQOwKkB4WdO8n0jMGr55g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to ZARToken (ZART)</h1>
+        <p>The future of decentralized value, minted with care.</p>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About ZARToken</h2>
+            <p>ZARToken is an ERC20 utility token with features like minting rate limits, pausability, and burnability, ensuring a stable and secure ecosystem.</p>
+            <p><strong>Token Name:</strong> ZARToken</p>
+            <p><strong>Symbol:</strong> ZART</p>
+            <p><strong>Decimals:</strong> <span id="tokenDecimals">Loading...</span></p>
+            <p><strong>Contract Address (Sepolia):</strong> <a href="#" id="tokenAddressLink" target="_blank"><span id="tokenAddress">YOUR_SEPOLIA_CONTRACT_ADDRESS_HERE</span></a></p>
+        </section>
+
+        <section id="wallet-interaction">
+            <h2>Your Wallet</h2>
+            <button id="connectWalletBtn">Connect Wallet</button>
+            <div id="walletInfo" style="display: none;">
+                <p><strong>Status:</strong> <span id="connectionStatus">Disconnected</span></p>
+                <p><strong>Account:</strong> <span id="userAccount">N/A</span></p>
+                <p><strong>ZART Balance:</strong> <span id="zartBalance">N/A</span> ZART</p>
+            </div>
+        </section>
+
+        <section id="actions">
+            <h2>Actions</h2>
+            <div class="action-buttons">
+                <!-- These would link to more complex pages or trigger modals in a full DApp -->
+                <button id="buySellBtn" disabled>Buy/Sell ZART (DEX)</button>
+                <button id="faucetBtn" disabled>Claim from Faucet</button>
+            </div>
+            <p id="actionInfo" class="info-text"></p>
+        </section>
+
+        <section id="learn-more">
+            <h2>Learn More</h2>
+            <p>Follow our journey and join the community!</p>
+            <ul>
+                <li><a href="#" target="_blank">Official Website (this page)</a></li>
+                <li><a href="#" target="_blank">Whitepaper (Coming Soon)</a></li>
+                <li><a href="#" target="_blank">GitHub Repository</a></li>
+                <li><a href="#" target="_blank">Follow us on X (Twitter)</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentYear"></span> ZARToken Project. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
